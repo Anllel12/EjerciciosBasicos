@@ -1,4 +1,3 @@
-
 package ejerciciosbasicos;
 
 /**
@@ -15,13 +14,16 @@ public class Multa {
         
     }
     
-    public boolean multa(int numBellotas, boolean finSemana){
-        if(numBellotas>=40 && numBellotas<=60){
-            return true;
-        } 
-        if(finSemana==true){
-            return true;
+    public int multa(int velocidad, boolean cumple){
+        if(cumple){
+            velocidad-=5;
         }
-        return false;
+        if(velocidad<=60){
+            return 0;
+        }
+        if(velocidad>60 || velocidad<=80){
+            return 1;
+        }
+        return 2;
     }
 }
