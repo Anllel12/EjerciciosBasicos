@@ -1,4 +1,4 @@
-
+ 
 package ejerciciosbasicos;
 
 /**
@@ -16,7 +16,7 @@ public class Contesta {
     }
     
     public boolean contesta(boolean matinal, boolean madre, boolean dormido){
-        if(){
+        if(!matinal && !madre && !dormido){
             return true;
         }
         return false;
